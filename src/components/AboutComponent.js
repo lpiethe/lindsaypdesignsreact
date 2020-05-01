@@ -14,6 +14,7 @@ import '../fonts/HomemadeApple-Regular.ttf';
 import '../fonts/Montserrat-ExtraLight.ttf';
 import '../App.css';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 
 
 
@@ -22,6 +23,7 @@ function About() {
   <div>
     <Header />
     <h1>Test</h1>
+    <Footer />
   </div>
   );
 }

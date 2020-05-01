@@ -84,3 +84,17 @@
 .frontimage {
   width: 100%;
 }
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  background-color:  rgb(211, 207, 214);
+  padding: 30px;
+  margin: auto;
+  width: 100%;
+}
+
+.site-footer li {
+  padding-left: 50px;
+  color: white;
+}

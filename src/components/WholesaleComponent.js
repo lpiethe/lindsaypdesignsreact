@@ -15,6 +15,7 @@ import {
   import '../fonts/Montserrat-ExtraLight.ttf';
   import '../App.css';
   import Header from './HeaderComponent';
+  import Footer from './FooterComponent';
 
 class Wholesale extends Component {
     render() {
@@ -22,6 +23,7 @@ class Wholesale extends Component {
             <div>
                 <Header />
                 <h1>Wholesale Form</h1>
+                <Footer />
             </div>
         );
     }

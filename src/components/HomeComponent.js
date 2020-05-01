@@ -26,6 +26,7 @@ import hydrangea from '../images/hydrangeacard.jpg';
 import About from './AboutComponent';
 import Wholesale from './WholesaleComponent';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 
 
 class Home extends Component {
@@ -37,7 +38,7 @@ class Home extends Component {
       <img className="frontimage" src={hydrangea} alt="hydrangea" />
 
       <Design />
-
+      <Footer />
     </React.Fragment>
   );
 }
