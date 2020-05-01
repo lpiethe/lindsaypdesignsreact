@@ -6,11 +6,11 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import happybirthdaycard from '../images/happybirthdaycard.jpg'
+import {happybirthdaycard} from '../images/happybirthdaycard.jpg'
 
 const items = [
   {
-    src: "./images/hydrangeacard.jpg",
+    src: 'happybirthdaycard',
     altText: 'Slide 1'
   },
   {
