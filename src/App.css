@@ -89,12 +89,15 @@
   display: flex;
   justify-content: center;
   background-color:  rgb(211, 207, 214);
-  padding: 30px;
-  margin: auto;
+  padding: 70px;
+  margin-top: 40px;
   width: 100%;
 }
-
-.site-footer li {
-  padding-left: 50px;
+.footerlink {
   color: white;
+}
+
+.ProductRows {
+  margin-bottom: 50px;
+  padding: 20px;
 }

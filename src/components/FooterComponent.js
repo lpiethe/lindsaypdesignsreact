@@ -7,16 +7,26 @@ import '../App.css';
 
 function Footer(props) {
     return (
-        <footer className="site-footer">
-            <div className="container">
-                <div className="row">             
-                    <li><Link to='/home'>Home</Link></li>
-                    <li><Link to='/About'>About</Link></li>
-                    <li><Link to='/Shop'>Shop</Link></li>
-                    <li><Link to='/Wholesale'>Wholesale</Link></li>
+        <React.Fragment>
+            <footer className="site-footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <h6><Link className="footerlink" to='/home'>Home</Link></h6>
+                        </div>
+                        <div className="col">
+                            <h6><Link className="footerlink" to='/About'>About</Link></h6>
+                        </div>
+                        <div className="col">
+                            <h6><Link className="footerlink" to='/Shop'>Shop</Link></h6>
+                        </div>
+                        <div className="col">
+                            <h6><Link className="footerlink" to='/Wholesale'>Wholesale</Link></h6>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </React.Fragment>
     )
 }
 

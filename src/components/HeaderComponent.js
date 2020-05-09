@@ -12,10 +12,6 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../fonts/HomemadeApple-Regular.ttf';
@@ -59,23 +55,9 @@ toggleNav() {
               <NavItem>
                 <NavLink className="nav-link" to="/About">ABOUT</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  SHOP
-              </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink className="nav-link" to="/Shop">SHOP</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink className="nav-link" to="/Wholesale">WHOLESALE</NavLink>
               </NavItem>

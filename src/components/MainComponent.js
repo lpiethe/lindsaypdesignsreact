@@ -12,18 +12,33 @@ import '../App.css';
 import About from './AboutComponent';
 import Wholesale from './WholesaleComponent';
 import Home from './HomeComponent';
+import Shop from './ShopComponent';
+import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 
 
 class Main extends Component {
+  
 
         render() {
-           
+            const directory = this.props.cardProducts.map(cardProducts => {
+                return (
+                    <div key={cardProducts.id} className="col-md-5 m-1">
+                        <Card>
+                            <CardImg width="100%" src={cardProducts.image} alt={cardProducts.name} />
+                            <CardImgOverlay>
+                                <CardTitle>{cardProducts.name}</CardTitle>
+                            </CardImgOverlay>
+                        </Card>
+                    </div>
+                );
+            });
             return (
                 <div>
                     <Router>
                         <Switch>
                     <Route exact path="/About" component={About}/>
                     <Route exact path="/Wholesale" component={Wholesale}/>
+                    <Route exact path="/Shop" component={Shop}/> 
                     <Route exact path="/Home" /><Home/> 
                         </Switch>
                     </Router>
