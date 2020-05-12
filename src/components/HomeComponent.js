@@ -27,15 +27,22 @@ import About from './AboutComponent';
 import Wholesale from './WholesaleComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+import { Parallax } from 'react-scroll-parallax';
 
 
 class Home extends Component {
  
   render () {
+
+    const ParallaxImage = () => (
+      <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+          
+      </Parallax>
+  );
   return (
     <React.Fragment>
     <Header />
-      <img className="frontimage" src={hydrangea} alt="hydrangea" />
+    <img className="frontimage" src={hydrangea} alt="hydrangea" />
 
       <Design />
       <Footer />

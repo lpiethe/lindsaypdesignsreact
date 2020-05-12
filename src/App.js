@@ -6,6 +6,7 @@ import './App.css';
 import Main from './components/MainComponent';
 import { CARDPRODUCTS } from './shared/cardProducts';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 class App extends Component {
@@ -20,7 +21,9 @@ class App extends Component {
   render() {
   return (
     <Router>
+      <ParallaxProvider>
       <Main cardProducts={this.state.cardProducts} />
+      </ParallaxProvider>
     </Router>
   );
 }

@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import SimpleImageSlider from "react-simple-image-slider";
-import happybirthdaycard from '../images/happybirthdaycard.jpg'
+import hydrangea from '../images/hydrangeacard.jpg';
 
 class ImageSlider extends Component {
+    
     render() {
         const images = [
-            { 'src': {happybirthdaycard} },
-           
-        ];
-
+            {url:"images/hydrangeacard.jpg"},
+            {url:"images/2.jpg"},
+            {url:"images/3.jpg"},
+        ]
         return (
             <div className="slider">
                 <SimpleImageSlider
-                    width={1000}
+                    width={600}
                     height={504}
                     images={images}
                 />

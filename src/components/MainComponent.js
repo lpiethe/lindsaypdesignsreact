@@ -14,6 +14,7 @@ import Wholesale from './WholesaleComponent';
 import Home from './HomeComponent';
 import Shop from './ShopComponent';
 import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
+import { Parallax } from 'react-scroll-parallax';
 
 
 class Main extends Component {
