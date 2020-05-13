@@ -16,22 +16,22 @@ class Wholesale extends Component {
     handleButton = () => {
         alert('Thank you for submitting your information. Someone will reach out to you within 24 hours.');
       }     
-      
+
     render() {
         return (
             <div>
                 <Header />
                 <Container>
                     <Row>
-                        <Col sm="6">
+                        <Col sm="6" style={{margin: 'auto', backgroundColor: '#d3cfd6'}}>
                 <Form style={{padding:40, border: 'blue'}}>
                     <FormGroup>
                         <Label for="companyName"> Company Name</Label>
-                        <Input type="companyName" name="companyName" id="companyName" placeholder="Company Name"/>
+                        <Input type="companyName" name="companyName" id="companyName" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="contactName"> Contact Name</Label>
-                        <Input type="contactName" name="contactName" id="contactName" placeholder="Contact Name"/>
+                        <Input type="contactName" name="contactName" id="contactName" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="email"> Email</Label>
@@ -39,7 +39,7 @@ class Wholesale extends Component {
                     </FormGroup>
                     <FormGroup>
                         <Label for="phoneNumber"> Phone Number</Label>
-                        <Input type="phoneNumber" name="phoneNumber" id="phoneNumber" placeholder="Phone Number"/>
+                        <Input type="phoneNumber" name="phoneNumber" id="phoneNumber" />
                     </FormGroup>
                     <Button onClick={this.handleButton}>Submit</Button>
                 </Form>

@@ -14,6 +14,7 @@ import Wholesale from './WholesaleComponent';
 import Home from './HomeComponent';
 import Shop from './ShopComponent';
 import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Parallax } from 'react-scroll-parallax';
 
 
@@ -35,6 +36,8 @@ class Main extends Component {
             });
             return (
                 <div>
+                     <TransitionGroup>
+                    <CSSTransition classNames="page" timeout={300}>
                     <Router>
                         <Switch>
                     <Route exact path="/About" component={About}/>
@@ -43,6 +46,8 @@ class Main extends Component {
                     <Route exact path="/Home" /><Home/> 
                         </Switch>
                     </Router>
+                    </CSSTransition>
+                    </TransitionGroup>
                 </div>
             );
         }

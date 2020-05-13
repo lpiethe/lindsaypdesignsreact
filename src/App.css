@@ -88,7 +88,7 @@
 .site-footer {
   display: flex;
   justify-content: center;
-  background-color:  rgb(211, 207, 214);
+  background-color:  #d3cfd6;
   padding: 70px;
   margin-top: 40px;
   width: 100%;
@@ -100,4 +100,23 @@
 .ProductRows {
   margin-bottom: 50px;
   padding: 20px;
+}
+/* React Transition Group Styles */
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-out;
 }

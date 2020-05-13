@@ -12,19 +12,18 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  Col,
 } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../fonts/HomemadeApple-Regular.ttf';
 import '../fonts/Montserrat-ExtraLight.ttf';
 import '../App.css';
-import About from './AboutComponent';
-import Wholesale from '../components/WholesaleComponent';
+import ShoppingCart from './ShoppingCartComponent';
+
 
 
 class Header extends Component {
   constructor(props) {
     super(props);
-
     this.toggleNav = this.toggleNav.bind(this);
     this.state = {
       isNavOpen: false
@@ -44,8 +43,11 @@ toggleNav() {
           <h1>L I N D S A Y  P  D E S I G N S</h1>
           <h3>cards & linen</h3>
         </container>
+        <Col>
+        <ShoppingCart/>
+        </Col>
       </Jumbotron>
-        <Navbar color="light" light expand="md">
+        <Navbar sticky="top" color="light" light expand="md">
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav className="mr-auto" navbar>

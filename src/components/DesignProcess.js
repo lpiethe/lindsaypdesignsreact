@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DesignCard from './DesignProcessCardComponent';
 
+//design process explanation on home page//
 
 class Design extends Component {
     render () {
