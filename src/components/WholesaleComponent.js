@@ -12,6 +12,12 @@ import {
   import Footer from './FooterComponent';
 
 class Wholesale extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            
+        }
+    }
 
     handleButton = () => {
         alert('Thank you for submitting your information. Someone will reach out to you within 24 hours.');
@@ -21,10 +27,10 @@ class Wholesale extends Component {
         return (
             <div>
                 <Header />
-                <Container>
+                <Container className='wholesaleFrom' style={{ paddingTop: 40}}>
                     <Row>
-                        <Col sm="6" style={{margin: 'auto', backgroundColor: '#d3cfd6'}}>
-                <Form style={{padding:40, border: 'blue'}}>
+                        <Col sm="6" style={{ margin: 'auto', backgroundColor: '#d3cfd6'}}>
+                <Form style={{padding:60, border: 'blue',}}  className='wholesaleForm'>
                     <FormGroup>
                         <Label for="companyName"> Company Name</Label>
                         <Input type="companyName" name="companyName" id="companyName" />

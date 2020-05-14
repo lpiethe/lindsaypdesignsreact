@@ -13,6 +13,8 @@ import {
   Nav,
   NavItem,
   Col,
+  Container,
+  Row,
 } from 'reactstrap';
 import '../fonts/HomemadeApple-Regular.ttf';
 import '../fonts/Montserrat-ExtraLight.ttf';
@@ -38,15 +40,20 @@ toggleNav() {
   render () {
   return (
     <React.Fragment>
+     
       <Jumbotron fluid>
         <container fluid>
           <h1>L I N D S A Y  P  D E S I G N S</h1>
           <h3>cards & linen</h3>
-        </container>
-        <Col>
-        <ShoppingCart/>
-        </Col>
+        </container>  
       </Jumbotron>
+      <Container className='CartButton'>
+          <Row>
+            <Col>
+            <ShoppingCart/>
+            </Col>
+          </Row>
+        </Container>
         <Navbar sticky="top" color="light" light expand="md">
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.isNavOpen} navbar>

@@ -120,3 +120,15 @@
   opacity: 0;
   transition: 300ms ease-out;
 }
+
+.CartButton {
+  position: absolute;
+  top:10%;
+  right: 0;
+  width: 150px;
+  transform: translateY(-50%);
+}
+
+.wholesaleForm {
+  transition: margin-right 4s ease-in-out 1s;
+}
