@@ -9,8 +9,8 @@ class Design extends Component {
         return (
 <React.Fragment>
     <div className="designProcess">
-    <h2>The Design Process</h2>
-    <h4>Photographed images come to life after being thoughtfully edited and printed on natural linen fabric.</h4>
+    <h3>THE DESIGN PROCESS</h3>
+    <h5>Photographed images come to life after being thoughtfully edited and printed on natural linen fabric.</h5>
     </div>
     <DesignCard />
 </React.Fragment>

@@ -3,9 +3,9 @@ import {
   Card, CardImg, CardBody,
   CardTitle,
 } from 'reactstrap';
-import Camellia_2 from '../images/camelliaPhoto.jpg';
-import Camellia_3 from '../images/Camellia Card.jpg';
-import Camellia_1 from '../images/camelliaFinal.jpg';
+import Camellia_2 from "../images/camelliaPhoto.jpg";
+import Camellia_3 from "../images/Camellia Card.jpg";
+import Camellia_1 from "../images/camelliaFinal.jpg";
 
 //these are the design process cards at the bottom of the home page//
 

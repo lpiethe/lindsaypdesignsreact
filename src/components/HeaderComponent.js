@@ -15,6 +15,7 @@ import {
   Col,
   Container,
   Row,
+  Button
 } from 'reactstrap';
 import '../fonts/HomemadeApple-Regular.ttf';
 import '../fonts/Montserrat-ExtraLight.ttf';
@@ -50,11 +51,12 @@ toggleNav() {
       <Container className='CartButton'>
           <Row>
             <Col>
-            <ShoppingCart/>
+            <NavLink to="/ShoppingCartComponent" style={{color:'gray'}}><i className="fa fa-shopping-cart">  CART</i></NavLink>
+
             </Col>
           </Row>
         </Container>
-        <Navbar sticky="top" color="light" light expand="md">
+        <Navbar sticky="top" color="white" light expand="md">
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav className="mr-auto" navbar>

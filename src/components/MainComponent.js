@@ -16,24 +16,13 @@ import Shop from './ShopComponent';
 import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Parallax } from 'react-scroll-parallax';
+import ShoppingCart from './ShoppingCartComponent';
 
 
 class Main extends Component {
   
 
         render() {
-            const directory = this.props.cardProducts.map(cardProducts => {
-                return (
-                    <div key={cardProducts.id} className="col-md-5 m-1">
-                        <Card>
-                            <CardImg width="100%" src={cardProducts.image} alt={cardProducts.name} />
-                            <CardImgOverlay>
-                                <CardTitle>{cardProducts.name}</CardTitle>
-                            </CardImgOverlay>
-                        </Card>
-                    </div>
-                );
-            });
             return (
                 <div>
                      <TransitionGroup>
@@ -43,6 +32,7 @@ class Main extends Component {
                     <Route exact path="/About" component={About}/>
                     <Route exact path="/Wholesale" component={Wholesale}/>
                     <Route exact path="/Shop" component={Shop}/> 
+                    <Route exact path="/ShoppingCartComponent" component={ShoppingCart}/> 
                     <Route exact path="/Home" /><Home/> 
                         </Switch>
                     </Router>

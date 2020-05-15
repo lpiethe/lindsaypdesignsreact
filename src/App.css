@@ -21,6 +21,10 @@
   font-family: 'Montserrat';
   src: local('Montserrat'), url(./fonts/Montserrat-ExtraLight.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'), url(./fonts/Montserrat-Regular.ttf) format('truetype');
+}
 
 
 @keyframes App-logo-spin {
@@ -46,16 +50,15 @@
   background: cadetblue;
 }
 .navbar {
-  font-family: Montserrat;
+  font-family: Montserrat-Regular;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -30px;
 }
 
 .navbar li {
   text-align: center;
   padding-right: 30px;
   padding-left: 190px;
-  
 }
 
 .slider {
@@ -78,7 +81,7 @@
   text-align: center;
   color: white;
   padding: 20px;
-  font-family: Montserrat;
+  font-family: Montserrat-Regular;
 }
 
 .frontimage {
@@ -86,19 +89,17 @@
 }
 
 .site-footer {
-  display: flex;
-  justify-content: center;
   background-color:  #d3cfd6;
-  padding: 70px;
-  margin-top: 40px;
+  padding: 30px;
+  
   width: 100%;
 }
 .footerlink {
   color: white;
+  font-family: Montserrat-Regular;
 }
 
 .ProductRows {
-  margin-bottom: 50px;
   padding: 20px;
 }
 /* React Transition Group Styles */
