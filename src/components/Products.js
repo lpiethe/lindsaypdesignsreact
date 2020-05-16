@@ -1,15 +1,17 @@
-import React from 'react';
-import { Card, CardTitle, CardImg, CardBody, Button, Row, Col, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import React, {useContext} from 'react';
+import { Card, CardTitle, CardImg, CardBody, Button, Row, Col, Modal, ModalHeader, ModalBody, Container, CardDeck } from 'reactstrap';
+import {CartContext} from './CartContextComponent';
+
 
 export const Products = (props) => {
+    const [cart, setCart] = useContext(CartContext);
+
     const addToCart = () => {
-        
+        const productOne = {name: props.name, price: props.price};
+        setCart(curr => [...curr, productOne]);
     }
     return(
-        <Row className="ProductRows" style={{backgroundColor:'white', justifyContent: 'center'}}>
-        <Col sm="3">
-            
-            <Card style={{ width: '18rem', fontFamily:'Montserrat-Regular'}}>
+            <Card style={{ width: '20rem', fontFamily:'Montserrat-Regular'}}>
                 <CardImg variant="top" src={props.image} width="150" />
                 <CardBody>
                     <CardTitle>{props.name}</CardTitle>
@@ -22,7 +24,5 @@ export const Products = (props) => {
                     </Button>
                 </CardBody>
             </Card>
-        </Col>
-    </Row>
     )
 }

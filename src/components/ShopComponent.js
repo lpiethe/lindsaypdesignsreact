@@ -18,6 +18,7 @@ import ShoppingCart from './ShoppingCartComponent';
 
 
 
+
 class Shop extends Component {
     constructor(props) {
         super(props);
@@ -99,22 +100,22 @@ class Shop extends Component {
                 </Row>
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}>
-                    <ModalBody style={{textAlign: 'center', padding: 20}}>
-                        You have added an item to your cart.
-                        <br></br>
-                        <NavLink to='/ShoppingCartComponent'>
-                        <Button outline style={{margin: 10}}>Checkout</Button>
-                        </NavLink>
-                        <br></br>
-                        <Button 
-                        outline 
-                        style={{margin: 10}}
+                <ModalBody style={{ textAlign: 'center', padding: 20 }}>
+                    You have added an item to your cart.
+                                <br></br>
+                    <NavLink to='/ShoppingCartComponent'>
+                        <Button outline style={{ margin: 10 }}>Checkout</Button>
+                    </NavLink>
+                    <br></br>
+                    <Button
+                        outline
+                        style={{ margin: 10 }}
                         onClick={this.toggleModal}>
-                            Continue Shopping
-                        </Button>
-                        <Button type='close' />
-                    </ModalBody>
-                    </Modal>
+                        Continue Shopping
+                                </Button>
+                                
+                </ModalBody>
+            </Modal>
                 <Footer />
             </React.Fragment>
         );

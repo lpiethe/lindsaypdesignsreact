@@ -133,3 +133,9 @@
 .wholesaleForm {
   transition: margin-right 4s ease-in-out 1s;
 }
+
+.Checkout {
+  align-items: 'center';
+  font-family: 'Montserrat-Regular';
+  text-align: center;
+}

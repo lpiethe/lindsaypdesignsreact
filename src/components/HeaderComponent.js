@@ -51,7 +51,7 @@ toggleNav() {
       <Container className='CartButton'>
           <Row>
             <Col>
-            <NavLink to="/ShoppingCartComponent" style={{color:'gray'}}><i className="fa fa-shopping-cart">  CART</i></NavLink>
+            <NavLink to="./Shop" style={{color:'gray'}}><i className="fa fa-shopping-cart">  CART</i></NavLink>
 
             </Col>
           </Row>
