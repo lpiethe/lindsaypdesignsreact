@@ -32,8 +32,9 @@ class ShoppingCart extends Component {
                     <CartProvider>
                         
                         <ProductList />
-                        
+                      
                         <Cart />
+                   
                         
                     </CartProvider>
                 </div>

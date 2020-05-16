@@ -6,14 +6,14 @@ const Cart = () => {
     const [cart, setCart] = useContext(CartContext);
     const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
     return (
-        <Container>
-            <Row>
-                <Col sm='12' className='Checkout'>
-               <div>    
-            Items in Cart:<br></br>{cart.length}
+        <Container className='Checkout'>
+            <Row className='Checkout'>
+                <Col className='Checkout' style={{marginTop: 30, border:'black'}}>
+                
+            <h4>Items in Cart:<br></br>{cart.length}</h4>
             <br />
-            Total Price:<br></br>{totalPrice}
-            </div>
+            <h4>Total Price:<br></br>{totalPrice}</h4>
+           <Button outline>Checkout</Button>
             </Col>
             </Row> 
         </Container>
