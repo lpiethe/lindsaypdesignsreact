@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
   NavLink,
-  Route,
+
 } from "react-router-dom";
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import {
@@ -15,13 +14,10 @@ import {
   Col,
   Container,
   Row,
-  Button
 } from 'reactstrap';
 import '../fonts/HomemadeApple-Regular.ttf';
 import '../fonts/Montserrat-ExtraLight.ttf';
 import '../App.css';
-import ShoppingCart from './ShoppingCartComponent';
-
 
 
 class Header extends Component {

@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Products } from './Products';
 import americanFlag from '../images/americanFlag.png';
 import DogCard from '../images/DogCard.png';
 import PikePlaceCard from '../images/PikePlaceCard.png';
 import TulipcardShop from '../images/TulipcardShop.png';
+import { Row, Col, } from 'reactstrap';
 
 
 
@@ -16,15 +17,15 @@ const ProductList = () => {
         { name: 'Tulip Bouquet', price:5.99, image: (TulipcardShop), id: 1 },
     ]
     return (
-        <div className="row">
+        <Row>
             {
                 CARDS.map(item => (
-                    <div className="col">
+                    <Col>
                     <Products name={item.name} price={item.price} image={item.image} key={item.id} />
-                    </div>
+                    </Col>
                 ))
             }
-        </div>
+        </Row>
     )
 }
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    NavLink,
     Route,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,15 +11,10 @@ import '../App.css';
 import About from './AboutComponent';
 import Wholesale from './WholesaleComponent';
 import Home from './HomeComponent';
-import Shop from './ShopComponent';
-import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { Parallax } from 'react-scroll-parallax';
 import ShoppingCart from './ShoppingCartComponent';
 
-
 class Main extends Component {
-  
 
         render() {
             return (

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button, Modal, NavLink, ModalHeader, ModalBody, ModalFooter, Container, Row, Col } from 'reactstrap';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import { Products } from './Products';
@@ -27,19 +26,12 @@ class ShoppingCart extends Component {
     render() {
         return (
             <React.Fragment>
-                <Header />
-                <div>
-                    <CartProvider>
-                        
-                        <ProductList />
-                      
-                        <Cart />
-                   
-                        
-                    </CartProvider>
-                </div>
-
-                <Footer />
+                <CartProvider>
+                    <Header />
+                    <Cart />
+                    <ProductList />
+                    <Footer />
+                </CartProvider>
             </React.Fragment>
         );
     }

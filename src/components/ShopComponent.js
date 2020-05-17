@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     NavLink
 } from "react-router-dom";
-import { Card, CardTitle, CardImg, CardBody, Button, Row, Col, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Card, CardTitle, CardImg, CardBody, Button, Row, Col, Modal, ModalBody } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../fonts/HomemadeApple-Regular.ttf';
 import '../fonts/Montserrat-ExtraLight.ttf';
@@ -14,8 +14,6 @@ import PikePlaceCard from '../images/PikePlaceCard.png';
 import TulipcardShop from '../images/TulipcardShop.png';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import ShoppingCart from './ShoppingCartComponent';
-
 
 
 
